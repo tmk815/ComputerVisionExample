@@ -59,7 +59,7 @@ public class AsyncHttpRequest extends AsyncTask<Uri.Builder, Void, String> {
 
             String buffer = "";
             HttpURLConnection con = null;
-            URL url = new URL("https://westus.api.cognitive.microsoft.com/vision/v1.0/ocr?language=unk&detectOrientation =true");
+            URL url = new URL("https://westus.api.cognitive.microsoft.com/vision/v1.0/ocr?language=unk&detectOrientation=true");
             con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("POST");
             con.setInstanceFollowRedirects(false);
